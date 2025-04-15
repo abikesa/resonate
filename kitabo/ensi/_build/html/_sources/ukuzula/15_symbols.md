@@ -27,3 +27,4 @@ Our symbols compress epistemic states:
 # flick 20250415193035-ircW
 # flick 20250415193727-ZoDd
 # flick 20250415223234-keSY
+# flick 20250415230811-s2oy

@@ -1,0 +1,38 @@
+
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN"
+"http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>Label</key>
+    <string>com.ukusoma.hook</string>
+    <key>ProgramArguments</key>
+    <array>
+        <string>/bin/echo</string>
+        <string>🪝 initialized</string>
+    </array>
+    <key>RunAtLoad</key>
+    <true/>
+</dict>
+</plist>
+# flick 20250409213555-4mW4
+# flick 20250409214202-jRQc
+# flick 20250409214617-XIaD
+# flick 20250409230557-dB30
+# flick 20250410004050-ujrh
+# flick 20250410004433-eSEy
+# flick 20250410004710-lLFb
+# flick 20250410004925-xMnd
+# flick 20250410005410-KnWQ
+# flick 20250410013244-49Ff
+# flick 20250410030139-F935
+# flick 20250410032335-SyJi
+# flick 20250410032811-EL3o
+# flick 20250410201244-PeIu
+# flick 20250410214248-q0E4
+# flick 20250413010203-K906
+# flick 20250413011144-Dbhy
+# flick 20250413132131-osJI
+# flick 20250414003734-yaOU
+# flick 20250414004210-xdBn
+# flick 20250415220600-T0xn

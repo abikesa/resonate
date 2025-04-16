@@ -27,6 +27,7 @@ dirs=(
   dolce
   caffe
   digestivo
+  jupyter
 )
 
 # Create directories under _build/html

@@ -253,6 +253,7 @@
 
 
 
+
 </ul>
 
     </div>
@@ -660,7 +661,7 @@ blockquote a:hover {
 
 <div class="float-frame float-right">
 
-<!-- Your empty Python code cell goes directly above this block in the .ipynb file --><div class="cell docutils container">
+<!-- Python code cell goes directly below in the .ipynb file --><div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
 <span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.pyplot</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">plt</span>
@@ -726,7 +727,7 @@ blockquote a:hover {
     <span class="p">)</span>
     <span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s2">&quot;US Research Ecosystem&quot;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">23</span><span class="p">)</span>    
     <span class="c1"># ✅ Save the actual image *after* drawing it</span>
-    <span class="n">plt</span><span class="o">.</span><span class="n">savefig</span><span class="p">(</span><span class="s2">&quot;../kitabo/ensi/figures/us-research-ecosystem.jpeg&quot;</span><span class="p">,</span> <span class="n">dpi</span><span class="o">=</span><span class="mi">300</span><span class="p">,</span> <span class="n">bbox_inches</span><span class="o">=</span><span class="s1">&#39;tight&#39;</span><span class="p">)</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">savefig</span><span class="p">(</span><span class="s2">&quot;figures/us-research-ecosystem.jpeg&quot;</span><span class="p">,</span> <span class="n">dpi</span><span class="o">=</span><span class="mi">300</span><span class="p">,</span> <span class="n">bbox_inches</span><span class="o">=</span><span class="s1">&#39;tight&#39;</span><span class="p">)</span>
     <span class="c1"># plt.show()</span>
 
 <span class="c1"># Run the visualization</span>
@@ -735,91 +736,6 @@ blockquote a:hover {
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
-<span class="ne">FileNotFoundError</span><span class="g g-Whitespace">                         </span>Traceback (most recent call last)
-<span class="n">Cell</span> <span class="n">In</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="n">line</span> <span class="mi">69</span>
-<span class="g g-Whitespace">     </span><span class="mi">65</span>     <span class="n">plt</span><span class="o">.</span><span class="n">savefig</span><span class="p">(</span><span class="s2">&quot;../kitabo/ensi/figures/us-research-ecosystem.jpeg&quot;</span><span class="p">,</span> <span class="n">dpi</span><span class="o">=</span><span class="mi">300</span><span class="p">,</span> <span class="n">bbox_inches</span><span class="o">=</span><span class="s1">&#39;tight&#39;</span><span class="p">)</span>
-<span class="g g-Whitespace">     </span><span class="mi">66</span>     <span class="c1"># plt.show()</span>
-<span class="g g-Whitespace">     </span><span class="mi">67</span> 
-<span class="g g-Whitespace">     </span><span class="mi">68</span> <span class="c1"># Run the visualization</span>
-<span class="ne">---&gt; </span><span class="mi">69</span> <span class="n">visualize_nn</span><span class="p">()</span>
-
-<span class="nn">Cell In[1], line 65,</span> in <span class="ni">visualize_nn</span><span class="nt">()</span>
-<span class="g g-Whitespace">     </span><span class="mi">63</span> <span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s2">&quot;US Research Ecosystem&quot;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">23</span><span class="p">)</span>    
-<span class="g g-Whitespace">     </span><span class="mi">64</span> <span class="c1"># ✅ Save the actual image *after* drawing it</span>
-<span class="ne">---&gt; </span><span class="mi">65</span> <span class="n">plt</span><span class="o">.</span><span class="n">savefig</span><span class="p">(</span><span class="s2">&quot;../kitabo/ensi/figures/us-research-ecosystem.jpeg&quot;</span><span class="p">,</span> <span class="n">dpi</span><span class="o">=</span><span class="mi">300</span><span class="p">,</span> <span class="n">bbox_inches</span><span class="o">=</span><span class="s1">&#39;tight&#39;</span><span class="p">)</span>
-
-<span class="nn">File ~/Documents/Chords/myenv/lib/python3.11/site-packages/matplotlib/pyplot.py:1243,</span> in <span class="ni">savefig</span><span class="nt">(*args, **kwargs)</span>
-<span class="g g-Whitespace">   </span><span class="mi">1240</span> <span class="n">fig</span> <span class="o">=</span> <span class="n">gcf</span><span class="p">()</span>
-<span class="g g-Whitespace">   </span><span class="mi">1241</span> <span class="c1"># savefig default implementation has no return, so mypy is unhappy</span>
-<span class="g g-Whitespace">   </span><span class="mi">1242</span> <span class="c1"># presumably this is here because subclasses can return?</span>
-<span class="ne">-&gt; </span><span class="mi">1243</span> <span class="n">res</span> <span class="o">=</span> <span class="n">fig</span><span class="o">.</span><span class="n">savefig</span><span class="p">(</span><span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>  <span class="c1"># type: ignore[func-returns-value]</span>
-<span class="g g-Whitespace">   </span><span class="mi">1244</span> <span class="n">fig</span><span class="o">.</span><span class="n">canvas</span><span class="o">.</span><span class="n">draw_idle</span><span class="p">()</span>  <span class="c1"># Need this if &#39;transparent=True&#39;, to reset colors.</span>
-<span class="g g-Whitespace">   </span><span class="mi">1245</span> <span class="k">return</span> <span class="n">res</span>
-
-<span class="nn">File ~/Documents/Chords/myenv/lib/python3.11/site-packages/matplotlib/figure.py:3490,</span> in <span class="ni">Figure.savefig</span><span class="nt">(self, fname, transparent, **kwargs)</span>
-<span class="g g-Whitespace">   </span><span class="mi">3488</span>     <span class="k">for</span> <span class="n">ax</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">axes</span><span class="p">:</span>
-<span class="g g-Whitespace">   </span><span class="mi">3489</span>         <span class="n">_recursively_make_axes_transparent</span><span class="p">(</span><span class="n">stack</span><span class="p">,</span> <span class="n">ax</span><span class="p">)</span>
-<span class="ne">-&gt; </span><span class="mi">3490</span> <span class="bp">self</span><span class="o">.</span><span class="n">canvas</span><span class="o">.</span><span class="n">print_figure</span><span class="p">(</span><span class="n">fname</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
-
-<span class="nn">File ~/Documents/Chords/myenv/lib/python3.11/site-packages/matplotlib/backend_bases.py:2184,</span> in <span class="ni">FigureCanvasBase.print_figure</span><span class="nt">(self, filename, dpi, facecolor, edgecolor, orientation, format, bbox_inches, pad_inches, bbox_extra_artists, backend, **kwargs)</span>
-<span class="g g-Whitespace">   </span><span class="mi">2180</span> <span class="k">try</span><span class="p">:</span>
-<span class="g g-Whitespace">   </span><span class="mi">2181</span>     <span class="c1"># _get_renderer may change the figure dpi (as vector formats</span>
-<span class="g g-Whitespace">   </span><span class="mi">2182</span>     <span class="c1"># force the figure dpi to 72), so we need to set it again here.</span>
-<span class="g g-Whitespace">   </span><span class="mi">2183</span>     <span class="k">with</span> <span class="n">cbook</span><span class="o">.</span><span class="n">_setattr_cm</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">figure</span><span class="p">,</span> <span class="n">dpi</span><span class="o">=</span><span class="n">dpi</span><span class="p">):</span>
-<span class="ne">-&gt; </span><span class="mi">2184</span>         <span class="n">result</span> <span class="o">=</span> <span class="n">print_method</span><span class="p">(</span>
-<span class="g g-Whitespace">   </span><span class="mi">2185</span>             <span class="n">filename</span><span class="p">,</span>
-<span class="g g-Whitespace">   </span><span class="mi">2186</span>             <span class="n">facecolor</span><span class="o">=</span><span class="n">facecolor</span><span class="p">,</span>
-<span class="g g-Whitespace">   </span><span class="mi">2187</span>             <span class="n">edgecolor</span><span class="o">=</span><span class="n">edgecolor</span><span class="p">,</span>
-<span class="g g-Whitespace">   </span><span class="mi">2188</span>             <span class="n">orientation</span><span class="o">=</span><span class="n">orientation</span><span class="p">,</span>
-<span class="g g-Whitespace">   </span><span class="mi">2189</span>             <span class="n">bbox_inches_restore</span><span class="o">=</span><span class="n">_bbox_inches_restore</span><span class="p">,</span>
-<span class="g g-Whitespace">   </span><span class="mi">2190</span>             <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
-<span class="g g-Whitespace">   </span><span class="mi">2191</span> <span class="k">finally</span><span class="p">:</span>
-<span class="g g-Whitespace">   </span><span class="mi">2192</span>     <span class="k">if</span> <span class="n">bbox_inches</span> <span class="ow">and</span> <span class="n">restore_bbox</span><span class="p">:</span>
-
-<span class="nn">File ~/Documents/Chords/myenv/lib/python3.11/site-packages/matplotlib/backend_bases.py:2040,</span> in <span class="ni">FigureCanvasBase._switch_canvas_and_return_print_method.&lt;locals&gt;.&lt;lambda&gt;</span><span class="nt">(*args, **kwargs)</span>
-<span class="g g-Whitespace">   </span><span class="mi">2036</span>     <span class="n">optional_kws</span> <span class="o">=</span> <span class="p">{</span>  <span class="c1"># Passed by print_figure for other renderers.</span>
-<span class="g g-Whitespace">   </span><span class="mi">2037</span>         <span class="s2">&quot;dpi&quot;</span><span class="p">,</span> <span class="s2">&quot;facecolor&quot;</span><span class="p">,</span> <span class="s2">&quot;edgecolor&quot;</span><span class="p">,</span> <span class="s2">&quot;orientation&quot;</span><span class="p">,</span>
-<span class="g g-Whitespace">   </span><span class="mi">2038</span>         <span class="s2">&quot;bbox_inches_restore&quot;</span><span class="p">}</span>
-<span class="g g-Whitespace">   </span><span class="mi">2039</span>     <span class="n">skip</span> <span class="o">=</span> <span class="n">optional_kws</span> <span class="o">-</span> <span class="p">{</span><span class="o">*</span><span class="n">inspect</span><span class="o">.</span><span class="n">signature</span><span class="p">(</span><span class="n">meth</span><span class="p">)</span><span class="o">.</span><span class="n">parameters</span><span class="p">}</span>
-<span class="ne">-&gt; </span><span class="mi">2040</span>     <span class="n">print_method</span> <span class="o">=</span> <span class="n">functools</span><span class="o">.</span><span class="n">wraps</span><span class="p">(</span><span class="n">meth</span><span class="p">)(</span><span class="k">lambda</span> <span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">:</span> <span class="n">meth</span><span class="p">(</span>
-<span class="nn">   2041         *args, **{k: v for k, v</span> in <span class="ni">kwargs.items</span><span class="nt">() if k not in skip}))</span>
-<span class="g g-Whitespace">   </span><span class="mi">2042</span> <span class="k">else</span><span class="p">:</span>  <span class="c1"># Let third-parties do as they see fit.</span>
-<span class="g g-Whitespace">   </span><span class="mi">2043</span>     <span class="n">print_method</span> <span class="o">=</span> <span class="n">meth</span>
-
-<span class="nn">File ~/Documents/Chords/myenv/lib/python3.11/site-packages/matplotlib/backends/backend_agg.py:498,</span> in <span class="ni">FigureCanvasAgg.print_jpg</span><span class="nt">(self, filename_or_obj, metadata, pil_kwargs)</span>
-<span class="g g-Whitespace">    </span><span class="mi">493</span> <span class="k">def</span><span class="w"> </span><span class="nf">print_jpg</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">filename_or_obj</span><span class="p">,</span> <span class="o">*</span><span class="p">,</span> <span class="n">metadata</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">pil_kwargs</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
-<span class="g g-Whitespace">    </span><span class="mi">494</span>     <span class="c1"># savefig() has already applied savefig.facecolor; we now set it to</span>
-<span class="g g-Whitespace">    </span><span class="mi">495</span>     <span class="c1"># white to make imsave() blend semi-transparent figures against an</span>
-<span class="g g-Whitespace">    </span><span class="mi">496</span>     <span class="c1"># assumed white background.</span>
-<span class="g g-Whitespace">    </span><span class="mi">497</span>     <span class="k">with</span> <span class="n">mpl</span><span class="o">.</span><span class="n">rc_context</span><span class="p">({</span><span class="s2">&quot;savefig.facecolor&quot;</span><span class="p">:</span> <span class="s2">&quot;white&quot;</span><span class="p">}):</span>
-<span class="ne">--&gt; </span><span class="mi">498</span>         <span class="bp">self</span><span class="o">.</span><span class="n">_print_pil</span><span class="p">(</span><span class="n">filename_or_obj</span><span class="p">,</span> <span class="s2">&quot;jpeg&quot;</span><span class="p">,</span> <span class="n">pil_kwargs</span><span class="p">,</span> <span class="n">metadata</span><span class="p">)</span>
-
-<span class="nn">File ~/Documents/Chords/myenv/lib/python3.11/site-packages/matplotlib/backends/backend_agg.py:430,</span> in <span class="ni">FigureCanvasAgg._print_pil</span><span class="nt">(self, filename_or_obj, fmt, pil_kwargs, metadata)</span>
-<span class="g g-Whitespace">    </span><span class="mi">425</span><span class="w"> </span><span class="sd">&quot;&quot;&quot;</span>
-<span class="g g-Whitespace">    </span><span class="mi">426</span><span class="sd"> Draw the canvas, then save it using `.image.imsave` (to which</span>
-<span class="g g-Whitespace">    </span><span class="mi">427</span><span class="sd"> *pil_kwargs* and *metadata* are forwarded).</span>
-<span class="g g-Whitespace">    </span><span class="mi">428</span><span class="sd"> &quot;&quot;&quot;</span>
-<span class="g g-Whitespace">    </span><span class="mi">429</span> <span class="n">FigureCanvasAgg</span><span class="o">.</span><span class="n">draw</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span>
-<span class="ne">--&gt; </span><span class="mi">430</span> <span class="n">mpl</span><span class="o">.</span><span class="n">image</span><span class="o">.</span><span class="n">imsave</span><span class="p">(</span>
-<span class="g g-Whitespace">    </span><span class="mi">431</span>     <span class="n">filename_or_obj</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">buffer_rgba</span><span class="p">(),</span> <span class="nb">format</span><span class="o">=</span><span class="n">fmt</span><span class="p">,</span> <span class="n">origin</span><span class="o">=</span><span class="s2">&quot;upper&quot;</span><span class="p">,</span>
-<span class="g g-Whitespace">    </span><span class="mi">432</span>     <span class="n">dpi</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">figure</span><span class="o">.</span><span class="n">dpi</span><span class="p">,</span> <span class="n">metadata</span><span class="o">=</span><span class="n">metadata</span><span class="p">,</span> <span class="n">pil_kwargs</span><span class="o">=</span><span class="n">pil_kwargs</span><span class="p">)</span>
-
-<span class="nn">File ~/Documents/Chords/myenv/lib/python3.11/site-packages/matplotlib/image.py:1644,</span> in <span class="ni">imsave</span><span class="nt">(fname, arr, vmin, vmax, cmap, format, origin, dpi, metadata, pil_kwargs)</span>
-<span class="g g-Whitespace">   </span><span class="mi">1642</span> <span class="n">pil_kwargs</span><span class="o">.</span><span class="n">setdefault</span><span class="p">(</span><span class="s2">&quot;format&quot;</span><span class="p">,</span> <span class="nb">format</span><span class="p">)</span>
-<span class="g g-Whitespace">   </span><span class="mi">1643</span> <span class="n">pil_kwargs</span><span class="o">.</span><span class="n">setdefault</span><span class="p">(</span><span class="s2">&quot;dpi&quot;</span><span class="p">,</span> <span class="p">(</span><span class="n">dpi</span><span class="p">,</span> <span class="n">dpi</span><span class="p">))</span>
-<span class="ne">-&gt; </span><span class="mi">1644</span> <span class="n">image</span><span class="o">.</span><span class="n">save</span><span class="p">(</span><span class="n">fname</span><span class="p">,</span> <span class="o">**</span><span class="n">pil_kwargs</span><span class="p">)</span>
-
-<span class="nn">File ~/Documents/Chords/myenv/lib/python3.11/site-packages/PIL/Image.py:2591,</span> in <span class="ni">Image.save</span><span class="nt">(self, fp, format, **params)</span>
-<span class="g g-Whitespace">   </span><span class="mi">2589</span>         <span class="n">fp</span> <span class="o">=</span> <span class="n">builtins</span><span class="o">.</span><span class="n">open</span><span class="p">(</span><span class="n">filename</span><span class="p">,</span> <span class="s2">&quot;r+b&quot;</span><span class="p">)</span>
-<span class="g g-Whitespace">   </span><span class="mi">2590</span>     <span class="k">else</span><span class="p">:</span>
-<span class="ne">-&gt; </span><span class="mi">2591</span>         <span class="n">fp</span> <span class="o">=</span> <span class="n">builtins</span><span class="o">.</span><span class="n">open</span><span class="p">(</span><span class="n">filename</span><span class="p">,</span> <span class="s2">&quot;w+b&quot;</span><span class="p">)</span>
-<span class="g g-Whitespace">   </span><span class="mi">2592</span> <span class="k">else</span><span class="p">:</span>
-<span class="g g-Whitespace">   </span><span class="mi">2593</span>     <span class="n">fp</span> <span class="o">=</span> <span class="n">cast</span><span class="p">(</span><span class="n">IO</span><span class="p">[</span><span class="nb">bytes</span><span class="p">],</span> <span class="n">fp</span><span class="p">)</span>
-
-<span class="ne">FileNotFoundError</span>: [Errno 2] No such file or directory: &#39;../kitabo/ensi/figures/us-research-ecosystem.jpeg&#39;
-</pre></div>
-</div>
 <img alt="_images/21ae026e0f34e47a67a47e2a7310014a0515317499c239ce89cf0a0076b6e9a3.png" src="_images/21ae026e0f34e47a67a47e2a7310014a0515317499c239ce89cf0a0076b6e9a3.png" />
 </div>
 </div>
@@ -1614,13 +1530,13 @@ Resonance.</p>
 <p>What we now see in rural Busoga is not development—it is absorption. The Madhvani sugar empire, like a colonial revenant, has replaced subsistence with monoculture, dignity with debt, and nutritional sufficiency with malnutrition. The children of Soga no longer chase butterflies in cassava gardens. They ride trucks to Kakira, their labor sweetening the profits of an industrial dynasty whose generosity masks an unrelenting extraction. The economy has grown, they say. Yes, like a tumor.</p>
 <p>And in America, the original genocidal land grab is so complete that one can pass a whole life without seeing a single Native American. The nation is draped in erasure, paved over with suburbia and myth. Now, in a bitter twist of irony, Trump—who inherited the wreckage and rage of that very system—is invoking tariffs as a “declaration of economic independence.” This isn’t protectionism; it’s projection. The same empire that once bulldozed global trade routes is now howling in pain when new rivals play by their rules.</p>
 <style>
-/* Float container base */
-.float-frame {
-    float: right; /* use float-left or float-center as needed */
+/* Scoped variant for seealso boxes */
+.float-frame.seealso-style {
+    float: right; 
     display: inline-block;
-    width: 190px;       /* precise control */
-    max-width: 190px;   /* safety cap */
-    min-width: 100px;   /* minimum floor */
+    width: 190px;
+    max-width: 190px;
+    min-width: 100px;
     height: auto;
     border: 1px solid #ccc;
     padding: 6px 10px;
@@ -1634,7 +1550,7 @@ Resonance.</p>
 
 /* Responsive fallback */
 @media (max-width: 768px) {
-    .float-frame {
+    .float-frame.seealso-style {
         float: none !important;
         display: block;
         width: 95vw !important;
@@ -1643,51 +1559,8 @@ Resonance.</p>
         white-space: normal;
     }
 }
-
-/* Magnify icon overlay */
-.image-bubble.layered-icon {
-    position: absolute;
-    bottom: 8px;
-    right: 8px;
-    width: 14px;
-    height: 12px;
-    background: none;
-    padding: 0;
-    cursor: pointer;
-    z-index: 5;
-}
-
-.large-icon {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background-color: #ddd;
-    border: 1px solid #888;
-    border-radius: 2px;
-}
-
-.small-icon {
-    position: absolute;
-    width: 50%;
-    height: 50%;
-    background-color: #aaa;
-    border: 1px solid #666;
-    border-radius: 2px;
-    bottom: -1px;
-    left: -1px;
-}
-
-.image-bubble.layered-icon:hover .large-icon {
-    background-color: #007BFF;
-    border-color: #0056b3;
-}
-
-.image-bubble.layered-icon:hover .small-icon {
-    background-color: white;
-    border-color: #007BFF;
-}
 </style>
-<div class="float-frame">
+<div class="float-frame seealso-style">
 <div class="admonition seealso">
 <p class="admonition-title">See also</p>
 <p><a class="reference external" href="https://abikesa.github.io/ulysses/">whatsApp auto-scrawl!</a></p>
